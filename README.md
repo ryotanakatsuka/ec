@@ -4,7 +4,6 @@
 
 |Colum                |Type         |Options                                 |
 |---------------------|-------------|----------------------------------------|
-|nickname             |string       |null:false                              |
 |email                |string       |null:false, default:""                  |
 |encrypted_password   |string       |null:false, default: ""                 |
 |birth_day            |date         |null:false                              |
