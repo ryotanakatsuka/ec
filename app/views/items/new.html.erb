@@ -1,0 +1,46 @@
+<%=render "shared/header"%>
+<div class="item-sell-main">
+  <h2 class="item-sell-title">出品情報を入力正てください</h2>
+  <%= form_with(model:@item,local: true) do |f|%>
+  
+  <div class="new-item">
+
+    <div class="item-image">写真をファイルから選んでください</div>
+    <%= f.file_field :image,class: "name-area"%>    
+ 
+    <div class="item-name">商品名</div>
+    <%= f.text_area :name,maxlength:"20",placeholder:"20字以内で入力してください",class: "name-area"%>
+
+    <div class="item-manufacuturer">生産者名</div>
+    <%= f.text_area :manufacturer,maxlength:"10",placeholder:"フルネームで入力してください",class:"manufacuturer"%>
+    
+    <div class="item-prefecture">生産地</div>
+    <%= f.collection_select(:prefecture_id,Prefecture.all,:id, :name, {}, {class:"prefecture-select"})%>
+    
+    <div class="item-condition">商品の状態</div>
+    <%= f.collection_select(:condition_id,Condition.all,:id, :name, {}, {class:"condition-select"})%>
+    
+    <div class="item-delivery-date">配送までの日数</div>
+    <%= f.collection_select(:delivery_date_id,DeliveryDate.all,:id, :name, {}, {class:"delivery-date-select"})%>
+    
+    
+    <div class="item-internal-capacity">内容量(kg)</div>
+    <%= f.text_field :internal_capacity,placeholder:"数字で入力してください",class:"internal-capacity"%>
+    <div class="item-price">販売価格</div>
+    <%= f.text_field :price,class:"price-input",placeholder:"例)1000"%>
+    </div>
+    <div class="sell-area">
+    <%=f.submit "出品する",class:"sell-btn"%>
+    </div>
+  <%end%>
+</div>
+
+
+
+
+
+
+
+
+
+

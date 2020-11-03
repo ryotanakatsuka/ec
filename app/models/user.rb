@@ -11,4 +11,5 @@ class User < ApplicationRecord
           
         end
         has_one :address
+        has_many :items
 end
