@@ -1,0 +1,177 @@
+* {  box-sizing: border-box;}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main{
+  width: 100vw;
+  margin: 0;
+}
+.title{
+  text-align: center;
+  width: 280px;
+  margin: 0px auto;
+  border-bottom: 5px solid green;
+}
+.question-contents{
+  padding: 5vh 15vw;
+  
+}
+.list-pict {
+  width: 300px;
+  height: 300px;
+}
+.question-lists{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-list{
+  width: 300px;
+  height: 300px;}
+.right-list{
+    width: 300px;
+    height: 300px;
+  }
+.new-info{
+    text-align: center;
+  }
+.messages{
+    width: 50vw;
+    margin: 0 auto;
+  }
+.message{
+    display: flex;
+    font-size: 20px;
+    margin: 0 0 16px 70px;
+    border-bottom: 1px solid red;
+  }
+.date{
+    padding-right: 40px;
+  }
+.category{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    
+  }
+  .left-contents{
+    width: 50%;
+    margin-left: 30px;
+  }
+  .right-contens{
+    width: 50%;
+    margin-right: 100px;
+    
+    width: 50vw;
+  }
+.topic-title{
+  
+  }
+.colum{
+    padding: 10px;
+  }
+.colum-link{
+    
+    color: #333333;
+  }
+  .popularity-index{
+    
+  }
+  .item-img{
+    width: 30vh;
+    height: 30vh;
+  }
+  .item-lists {
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item-name{
+    font-size: 3vh;
+  }
+  .item-sell-title{
+    text-align: center;
+  }
+.new-item{
+  text-align: center;
+
+}
+.name-area{
+  width: 250px;
+}
+.manufacuturer{
+  width: 200px;
+  
+}
+.internal-capacity{
+  width: 100px;
+}
+.prefecture-select{
+  width: 200px;
+  height: 20px;
+}
+.condition-select{
+  width: 200px;
+}
+.item-prefecture{
+  font-size: 3vh;
+
+}
+.item-condition{
+  font-size: 3vh;
+}
+.item-manufacuturer{
+  font-size: 3vh;
+}
+.item-internal-capacity{
+  font-size: 3vh;
+  
+}
+.item-price{
+  font-size: 3vh;
+}
+.item-delivery-date{
+  font-size: 3vh;
+}
+.delivery-date-select{
+  width: 200px;
+}
+.internal-capacity{
+  text-align: right;
+}
+.price-input{
+  text-align: right;
+}
+.sell-area{
+  text-align: center;
+  margin-top: 50px;
+}
+.sell-btn{
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  width: 50%;
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 4vh;
+}
+.item-image{
+  font-size: 3vh;
+}
