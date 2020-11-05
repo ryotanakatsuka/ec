@@ -63,20 +63,31 @@
         </div>
     </div>
    <div class="right-contens">
-    <h2 class="popularity-index">人気の商品一覧</h2>
+    <h2 class="popularity-index">新着商品</h2>
     <ul class="item-lists">
-      <li class="list"><%=link_to "#" do%>
-        <div class="item-img-content">
-        <%=image_tag "question1.jpg",class:"item-img"%>
+      <% @items.each do |item|%>
+        <li class="list"><%=link_to "#" do%>
+          <div class="item-img-content">
+          <%=image_tag item.image,class:"item-img"%>
         </div>
-       <%end%>
+        <%end%>
         <div class="item-info">
-        <h3 class="item-name"><%="生産者名"%></h3>
-        <div class="item-price">
-        <%="900"%>円(送料込み)
+          <div class="item-name">【商品名】<%=item.name%></div>
+          <div class="item-prefecture">
+            【生産地】<%=item.prefecture.name%>産
+          </div>
+          <div class="item-manufacturer">
+            【生産者】<%=item.manufacturer%>
+          </div>
+          <div class="item-internal-capacity">
+            【内容量】<%=item.internal_capacity%>
+          </div>
+          <div class="item-price">
+            【販売価格】<%=item.price%>円(送料込み)
         </div>
-        </div>
+       </div>
       </li>
+     <%end%>
     </ul>
    </div>
   </div>
