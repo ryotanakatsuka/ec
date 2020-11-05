@@ -71,14 +71,13 @@ div{
     
   }
   .left-contents{
-    width: 50%;
+    width: 30%;
     margin-left: 30px;
   }
   .right-contens{
-    width: 50%;
-    margin-right: 100px;
+    width: 100%;
     
-    width: 50vw;
+    
   }
 .topic-title{
   
@@ -91,14 +90,14 @@ div{
     color: #333333;
   }
   .popularity-index{
-    
+    text-align: center;
   }
   .item-img{
     width: 30vh;
     height: 30vh;
   }
   .item-lists {
-    width: 30vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,6 +171,6 @@ div{
   font-size: 14px;
   margin-bottom: 4vh;
 }
-.item-image{
-  font-size: 3vh;
+/*.list{
+  flex-wrap: wrap;
 }
