@@ -8,9 +8,12 @@
       <div class="item-prefecture">【生産地】<%=@item.prefecture.name%>産</div>
       <div class="item-manufacturer">【生産者】<%=@item.manufacturer%></div>
       <div class="item-internal-capacity">【内容量】<%=@item.internal_capacity%></div>
+      <div class="item-delivery-date">
+            【発送までの日数】<%=@item.delivery_date.name%>
+          </div>
       <div class="item-price">【販売価格】<%=@item.price%>円(送料込み)</div>
     </div>
-    <%=link_to "購入画面へ",new_item_order_path(@item.id)%>
+    <%=link_to "この商品の購入画面へ",new_item_order_path(@item.id)%>
  </div>
 
 

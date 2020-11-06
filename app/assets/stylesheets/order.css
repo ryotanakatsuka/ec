@@ -1,0 +1,84 @@
+.item-order{
+ margin-top: 60px;
+}
+.item-order-box{
+  display: flex;
+  justify-content: center;
+  
+}
+.item-order-info{
+  text-align: left;
+  margin-top: 10px;
+}
+.item-order-img{
+  width: 40vh;
+  height: 40vh;
+}
+.item-order-name{
+  
+  font-size: 4vh;
+}
+.item-order-prefecture{
+  
+  font-size: 4vh; 
+}
+.item-order-manufacturer{
+  font-size: 4vh; 
+}
+.item-order-internal-capacity{
+  font-size: 4vh; 
+}
+.item-order-delivery-date{
+  font-size: 4vh; 
+}
+.item-order-price{
+  font-size: 4vh; 
+}
+.credit-card-form{
+  text-align: center;
+  margin-top: 10px;
+}
+.form-wrap{
+  font-size: 3vh;
+  
+}
+.credit-number{
+  width: 200px;
+  height: 40px;
+  font-size: 2vh;
+  text-align: right;
+}
+.cvc{
+  width: 200px;
+  height: 40px;
+  font-size: 2vh;
+  text-align: right;
+}
+.exp_month{
+  width: 70px;
+  height: 40px;
+  font-size: 2vh;
+  text-align: right;
+}
+.exp_year{
+  width: 70px;
+  height: 40px;
+  font-size: 2vh;
+  text-align: right;
+}
+.card-tarm{
+  text-align: center;
+  margin: 0 auto; 
+  font-size: 3vh;
+}
+.buy{
+  margin-top: 30px;
+  text-align: center;
+}
+.buy-btn{
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+background-color:red;
+color: seashell;
+}
