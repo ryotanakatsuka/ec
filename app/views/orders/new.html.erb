@@ -1,0 +1,49 @@
+<%=render "shared/header"%>
+<div class="item-order">
+ <div class="item-order-box">
+  
+    <%=image_tag @item.image,class:"item-order-img"%>
+    
+    <div class="item-order-info">
+      <div class="item-order-name">【商品名】<%=@item.name%></div>
+      <div class="item-order-prefecture">【生産地】<%=@item.prefecture.name%>産</div>
+      <div class="item-order-manufacturer">【生産者】<%=@item.manufacturer%></div>
+      <div class="item-order-internal-capacity">【内容量】<%=@item.internal_capacity%></div>
+      <div class="item-order-delivery-date">【発送までの日数】<%=@item.delivery_date.name%></div>
+      <div class="item-order-price">【販売価格】<%=@item.price%>円(送料込み)</div>
+    </div>
+  </div>
+  <%= form_with(model: [@item,@order],id: 'charge-form',local: true) do |f|%>
+  <div class="credit-card-form">
+     <h2>クレジットカード情報を入力してください</h2>
+      <div class="form-wrap">
+        <%= f.label :number,"【カード番号】"%>
+        <%= f.text_field :number,class:"credit-number",placeholder:"カード番号",id:"card-number",maxlength:"16"%>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-wrap">
+        <%= f.label :cvc,"【CVC】"%>
+        <%= f.text_field :cvc,class:"cvc",placeholder:"3桁もしくは4桁の番号", id:"card-cvc",maxlength:"4"%>
+      </div>
+   </div>
+    <div class="card-tarm">
+     <div class="card-tarm-month">
+      <%= f.label :cvc,"【有効期限】"%>
+      <%= f.select :exp_month,1..12,{include_blank: "---"},id:"card-exp-month", class: "exp_month"%><label>月</label>
+      <%= f.select :exp_year,20..30,{include_blank: "---"},id:"card-exp-year", class: "exp_year"%><label>年</label>
+     </div>
+    </div>
+    <div class="buy">
+     <%=f.submit "購入する",class:"buy-btn"%>
+    </div>
+    
+  <%end%>
+
+
+
+</div>

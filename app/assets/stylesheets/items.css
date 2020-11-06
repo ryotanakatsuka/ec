@@ -13,10 +13,11 @@ div{
 }
 
 
-
+body {background-image: url("back-img.jpg"); }
 .main{
   width: 100vw;
   margin: 0;
+  
 }
 .title{
   text-align: center;
@@ -100,7 +101,7 @@ div{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
   .item-name{
     font-size: 3vh;
@@ -136,7 +137,7 @@ div{
 .item-condition{
   font-size: 3vh;
 }
-.item-manufacuturer{
+.item-manufacturer{
   font-size: 3vh;
 }
 .item-internal-capacity{
@@ -170,7 +171,4 @@ div{
   height: 50px;
   font-size: 14px;
   margin-bottom: 4vh;
-}
-/*.list{
-  flex-wrap: wrap;
 }
