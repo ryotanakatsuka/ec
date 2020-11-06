@@ -79,6 +79,7 @@
   width: 50%;
   height: 50px;
   cursor: pointer;
-background-color:red;
-color: seashell;
+  background-color:red;
+  color: seashell;
+  font-size: 20px;
 }
