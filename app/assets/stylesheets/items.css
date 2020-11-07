@@ -46,6 +46,9 @@ body {background-image: url("back-img.jpg"); }
     width: 300px;
     height: 300px;
   }
+  .list{
+    margin-bottom: 20px;
+  }
 .new-info{
     text-align: center;
   }
@@ -93,9 +96,11 @@ body {background-image: url("back-img.jpg"); }
   .popularity-index{
     text-align: center;
   }
+  
   .item-img{
-    width: 30vh;
-    height: 30vh;
+    width: 25vh;
+    height: 25vh;
+    margin: 3 3;
   }
   .item-lists {
     width: 100%;
@@ -104,7 +109,7 @@ body {background-image: url("back-img.jpg"); }
     justify-content: space-between;
   }
   .item-name{
-    font-size: 3vh;
+    font-size: 2vh;
   }
   .item-sell-title{
     text-align: center;
@@ -131,24 +136,24 @@ body {background-image: url("back-img.jpg"); }
   width: 200px;
 }
 .item-prefecture{
-  font-size: 3vh;
+  font-size: 2vh;
 
 }
 .item-condition{
-  font-size: 3vh;
+  font-size: 2vh;
 }
 .item-manufacturer{
-  font-size: 3vh;
+  font-size: 2vh;
 }
 .item-internal-capacity{
-  font-size: 3vh;
+  font-size: 2vh;
   
 }
 .item-price{
-  font-size: 3vh;
+  font-size: 2vh;
 }
 .item-delivery-date{
-  font-size: 3vh;
+  font-size: 2vh;
 }
 .delivery-date-select{
   width: 200px;

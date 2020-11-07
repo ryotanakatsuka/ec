@@ -1,4 +1,58 @@
+.show-edit{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show{
+}
+.edit{
+}
+.link-show{
+  text-decoration: none;
+  color: black;
+  font-size: 3vh;
+  border: 1px solid black;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 5px;
+  
+}
+.link-edit{
+  text-decoration: none;
+  color: black;
+  font-size: 3vh;
+  padding: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-left: 5px;
+}
 .item-show{
-  margin-top: 50px;
+  margin-top: 0;
   text-align: center;
+}
+.item-box{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.item-img{
+  width: 35vh;
+  height: 35vh;
+}
+.item-info{
+  width: 20%;
+  text-align: left;
+}
+.buy{
+  text-align: center;
+}
+.link-buy{
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }

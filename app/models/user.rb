@@ -10,7 +10,7 @@ class User < ApplicationRecord
           validates :last_name_kana     
           
         end
-        has_one :address
-        has_many :items
-        has_many :orders
+        has_one :address,dependent: :destroy
+        has_many :items,dependent: :destroy
+        has_many :orders,dependent: :destroy
 end
