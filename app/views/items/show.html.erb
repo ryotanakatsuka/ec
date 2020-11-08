@@ -2,10 +2,13 @@
 
 <div class="show-edit">
   <div class="show">
+  <% if  current_user.admin?%>
+    
   <%=link_to "編集する",edit_item_path(@item.id),class:"link-show"%>
   </div>
   <div class="edit">
   <%= link_to "削除する",item_path(@item.id),method: :delete,class:"link-edit"%>
+  <% end %>
   </div>
 </div>
 

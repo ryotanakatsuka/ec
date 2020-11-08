@@ -4,7 +4,7 @@
   </div>
   <div class="navbar">
     <ul class="nav-lists">
-    <%if user_signed_in?%>
+    <%if user_signed_in? || current_user.admin?%>
       <li><%=link_to "#{current_user.first_name}様","#",class:"user-name"%></li>
       <li><%=link_to "ログアウト",destroy_user_session_path, method: :delete,class:"logout"%></li>
       <li><%=link_to "出品する",new_item_path,class: "exhibit"%></li>
