@@ -56,3 +56,11 @@ align-items: center;
   font-size: 20px;
   font-weight: bold;
 }
+.cart-in{
+  border: 1px solid black;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(20, 17, 15);;
+  font-size: 30px;
+  
+}

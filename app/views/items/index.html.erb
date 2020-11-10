@@ -1,4 +1,3 @@
-<%=render "shared/header"%>
 <%=render "shared/second_header"%>
 <div class="main">
   <div class="question-contents">
@@ -35,7 +34,7 @@
       <div class="topic-title"><h2>トピック</h2>
         <ul >
           <li class="colum">
-          <%= link_to("このサイトについて書く","#",class: "colum-link")%>
+          <%= link_to("このサイトについて書く",page_path("about"),class: "colum-link")%>
           </li>
           <li class="colum">
           <%= link_to("日本のお米事情","#",class: "colum-link")%>

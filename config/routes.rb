@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   devise_for :users,controllers:{
     registrations: 'users/registrations'
   }
@@ -10,4 +12,13 @@ Rails.application.routes.draw do
   resources :items do
     resources :orders,only:[:new,:create]
   end
+  
+  resources :carts, only: [:show]
+
+  post '/add_item' => 'carts#add_item'
+  post '/update_item' => 'carts#update_item'
+  delete '/delete_item' => 'carts#delete_item'
+  
+    resources :topics
+
 end

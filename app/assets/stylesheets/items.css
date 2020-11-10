@@ -71,7 +71,7 @@ body {background-image: url("back-img.jpg"); }
     display: flex;
     margin-top: 60px;
     justify-content: space-around;
-    border: 1px solid lightgray;
+    
     
   }
   .left-contents{
