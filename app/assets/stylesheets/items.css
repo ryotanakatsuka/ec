@@ -13,7 +13,7 @@ div{
 }
 
 
-body {background-image: url("back-img.jpg"); }
+body {background-image: image-url("back-img.jpg"); }
 .main{
   width: 100vw;
   margin: 0;
