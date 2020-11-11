@@ -1,5 +1,8 @@
+.form{
+  text-align: center;
+  margin-top: 10px;
+}
 .item-order{
- margin-top: 60px;
 }
 .item-order-box{
   display: flex;
@@ -82,4 +85,5 @@
   background-color:red;
   color: seashell;
   font-size: 20px;
+  
 }

@@ -71,20 +71,21 @@ body {background-image: url("back-img.jpg"); }
     display: flex;
     margin-top: 60px;
     justify-content: space-around;
-    border: 1px solid lightgray;
-    
-  }
+    }
   .left-contents{
     width: 30%;
     margin-left: 30px;
   }
+  .category-title{
+text-align: center;
+  }
   .right-contens{
     width: 100%;
-    
-    
+    text-align: center;
+    margin-left: 40px;
   }
 .topic-title{
-  
+  text-align: center;
   }
 .colum{
     padding: 10px;
