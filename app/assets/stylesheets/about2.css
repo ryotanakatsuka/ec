@@ -19,16 +19,21 @@ position: absolute;
 .about-right{
 width: 100%;
 margin-right: 200px;
-
+position: relative;
+height: 100%;
+background-color: thistle;
 }
 .about-right-box{
 text-align: center;
-width: 100%;
+
+height: 100vh;
+position: absolute;
 }
 .about-right-title{
-
+  
 }
 .text{
+ 
   font-size: 20px;
   word-wrap: normal;
 }
