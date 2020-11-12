@@ -23,8 +23,12 @@ margin-right: 200px;
 }
 .about-right-box{
 text-align: center;
-
+width: 100%;
 }
 .about-right-title{
 
+}
+.text{
+  font-size: 20px;
+  word-wrap: normal;
 }

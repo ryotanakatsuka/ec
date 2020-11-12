@@ -84,6 +84,9 @@ text-align: center;
     text-align: center;
     margin-left: 40px;
   }
+  .item-index{
+    text-align: left;
+  }
 .topic-title{
   text-align: center;
   }

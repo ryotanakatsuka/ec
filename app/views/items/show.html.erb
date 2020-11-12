@@ -1,7 +1,7 @@
 
 <div class="show-edit">
   <div class="show">
-  <% if  current_user.admin?%>
+  <% if  user_signed_in? && current_user.admin?%>
     
   <%=link_to "編集する",edit_item_path(@item.id),class:"link-show"%>
   </div>
@@ -27,9 +27,9 @@
           </div>
       <div class="item-price">【販売価格】<%=@item.price%>円(送料込み)</div>
     </div>
-    <div class="cart">
-    <%=link_to "カートに入れる",line_items_path(@item.id),class:"cart-in"%>
-    </div>
+    <%# <div class="cart"> %>
+    <%#=link_to "カートに入れる",line_items_path(@item.id),class:"cart-in"%>
+    <%# </div> %>
  </div>
 
  <div class="buy">
