@@ -20,5 +20,5 @@
    margin-bottom: 0;
  }
  .back-img{
-   background-image: url("back-img.jpg");
+   background-image: url("<%= asset_path('back-img.jpg') %>")
  }
