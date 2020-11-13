@@ -34,7 +34,7 @@
       <div class="topic-title"><h2>トピック</h2>
         <ul >
           <li class="colum">
-          <%= link_to("このサイトについて書く",page_path("about"),class: "colum-link")%>
+          <%= link_to("米ナビ",page_path("about"),class: "colum-link")%>
           </li>
           <li class="colum">
           <%= link_to("日本のお米事情",page_path("about2"),class: "colum-link")%>
@@ -70,7 +70,7 @@
           <%=image_tag item.image,class:"item-img"%>
         
         <%end%>
-        <div>
+        <div class="item-index">
           
           <div class="item-name">【商品名】<%=item.name%></div>
           
@@ -99,3 +99,4 @@
    </div>
   </div>
 </div>
+ 

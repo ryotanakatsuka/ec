@@ -2,9 +2,11 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .about-left{
-width: 25%;
+
 height: auto;
 text-align: center;
 position: relative;
@@ -16,15 +18,23 @@ margin-left: 0;
 
 position: absolute;
 }
-.about-right{
-width: 100%;
-margin-right: 200px;
 
+.about-right{
+
+position: relative;
+height: 100%;
 }
 .about-right-box{
 text-align: center;
 
+height: 100vh;
+position: absolute;
 }
 .about-right-title{
-
+  
+}
+.text{
+ 
+  font-size: 20px;
+  word-wrap: normal;
 }
