@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
   root to: "items#index"
   resources :items do
-    resources :orders,only:[:new,:create]
+    resources :orders,only:[:new,:create,]
   end
   
   resources :carts, only: [:show]

@@ -14,7 +14,8 @@
  *= require_self
  */
  footer{
-  height: 20vh;
+  height: 25vh;
   background-color: white;
   margin-bottom: 0;
+  
 }
