@@ -1,6 +1,6 @@
-.about{
+.about2{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -22,19 +22,17 @@ position: absolute;
 .about-right{
 
 position: relative;
-height: 100%;
+
 }
 .about-right-box{
 text-align: center;
-
-height: 100vh;
 position: absolute;
 }
+
 .about-right-title{
   
 }
 .text{
- 
   font-size: 20px;
   word-wrap: normal;
 }
