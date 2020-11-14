@@ -1,6 +1,5 @@
 .about2{
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -15,18 +14,17 @@ position: relative;
 .about-left-box{
 margin-top: 20%;
 margin-left: 0;
-
+height: auto;
 position: absolute;
 }
 
 .about-right{
-height: 100vh;
-position: relative;
+  text-align: center;
+  height: 100%;
 
 }
 .about-right-box{
-text-align: center;
-position: absolute;
+
 }
 
 .about-right-title{
