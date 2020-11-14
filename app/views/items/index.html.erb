@@ -45,7 +45,7 @@
         </ul>
       </div>
       <div class="category-title"><h2>商品一覧</h2>
-        <ul >
+          <ul >
             <li class="colum">
             <%= link_to("白米","#",class: "colum-link")%>
             </li>
@@ -59,7 +59,7 @@
             <%= link_to("酒粕","#",class: "colum-link")%>
             </li>
           </ul>
-        </div>
+      </div>
     </div>
    <div class="right-contens">
     <h2 class="popularity-index">新着商品</h2>
@@ -83,7 +83,7 @@
           </div>
           
           <div class="item-internal-capacity">
-            【内容量】<%=item.internal_capacity%>
+            【内容量】<%=item.internal_capacity%>Kg
           </div>
           <div class="item-delivery-date">
             【発送までの日数】<%=item.delivery_date.name%>
@@ -91,7 +91,7 @@
           
           <div class="item-price">
             【販売価格】<%=item.price%>円(送料込み)
-        </div>
+          </div>
        </div>
       </li>
      <%end%>
@@ -99,4 +99,4 @@
    </div>
   </div>
 </div>
- 
+<%=render "shared/footer"%>

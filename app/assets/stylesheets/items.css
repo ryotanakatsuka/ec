@@ -14,12 +14,14 @@ div{
 
 
 
+
 body {
   background-image: url("back-img.jpg"); 
   padding-bottom: 0;
   margin: 0;
   padding: 0;
 }
+
 
 .main{
   width: 100vw;
@@ -74,7 +76,7 @@ body {
   }
 .category{
     width: 100vw;
-    height: 600px;
+    height: auto;
     display: flex;
     margin-top: 60px;
     justify-content: space-around;
@@ -117,7 +119,8 @@ text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: auto;
   }
   .item-name{
     font-size: 2vh;
@@ -187,4 +190,10 @@ text-align: center;
   height: 50px;
   font-size: 14px;
   margin-bottom: 4vh;
+}
+.footer{
+  width: 100vw;
+  height: 20vh;
+  background-color: green;
+  margin-bottom: 0;
 }

@@ -10,14 +10,14 @@ Rails.application.routes.draw do
   end
   root to: "items#index"
   resources :items do
-    resources :orders,only:[:new,:create,]
+    resources :orders,only:[:new,:create]
   end
   
-  resources :carts, only: [:show]
+  #resources :carts, only: [:show]
 
-  post '/add_item' => 'carts#add_item'
-  post '/update_item' => 'carts#update_item'
-  delete '/delete_item' => 'carts#delete_item'
+  #post '/add_item' => 'carts#add_item'
+  #post '/update_item' => 'carts#update_item'
+  #delete '/delete_item' => 'carts#delete_item'
   
     
 

@@ -42,6 +42,7 @@ Basic認証
 ![c958f35a02c15196eadd7d580071c07e](https://user-images.githubusercontent.com/71533935/99033782-05ba2a80-25bf-11eb-9f04-f78f65c2b318.gif)
 - 管理ユーザー機能
 本アプリケーションは特定のユーザーのみに商品を出品できる様にし、出品者自身の商品を編集・削除ができるよう実装しました。
+編集![736d0b963262e18d32c2437ab3ad3434](https://user-images.githubusercontent.com/71533935/99050054-f648da80-25da-11eb-95e3-94fd93effcdd.gif)
 -
 -
 -
