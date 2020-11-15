@@ -1,37 +1,37 @@
+<div class="address">
 <h2>住所情報登録</h2>
 
 <%= form_for @address do |f| %>
   <%= render "devise/shared/error_messages", resource: @address %>
 
   <div class="field">
-    <%= f.label :postal_code %><br />
-    <%= f.text_field :postal_code %>
+    <div>郵便番号</div>
+    <%= f.text_field :postal_code,placeholder:"ハイフン込みで入力" %>
   </div>
   <div class="field">
-    <%= f.label :prefecture_id %><br />
-    <%= f.text_field :prefecture_id %>
+    <div>都道府県</div>
+    <%= f.text_field :prefecture_id,placeholder:"例）東京都" %>
   </div>
   
   <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
+    <div>市区町村</div>
+    <%= f.text_field :city,placeholder:"例）中央区銀座" %>
   </div>
   <div class="field">
-    <%= f.label :addresses %><br />
-    <%= f.text_field :addresses %>
+    <div>番地</div>
+    <%= f.text_field :addresses,placeholder:"例）X-X-X" %>
   </div>
   <div class="field">
-    <%= f.label :building %><br />
-    <%= f.text_field :building %>
+    <div>建物名</div>
+    <%= f.text_field :building,placeholder:"例）○○ビル○○号室" %>
   </div>
 
   <div class="field">
-    <%= f.label :phone_number %><br />
-    <%= f.text_field :phone_number %>
+    <div>電話番号</div>
+    <%= f.text_field :phone_number,placeholder:"ハイフンなし" %>
   </div>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "登録" %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
+</div>

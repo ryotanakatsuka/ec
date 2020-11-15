@@ -79,7 +79,7 @@ body {
     height: auto;
     display: flex;
     margin-top: 60px;
-    justify-content: space-around;
+    justify-content: space-between;
     }
   .left-contents{
     width: 30%;
@@ -91,7 +91,7 @@ text-align: center;
   .right-contens{
     width: 100%;
     text-align: center;
-    margin-left: 40px;
+    
   }
   .item-index{
     text-align: left;
