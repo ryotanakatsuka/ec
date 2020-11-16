@@ -95,7 +95,20 @@ https://ec-30432.herokuapp.com/
 ## データベース設計
 ![image](https://user-images.githubusercontent.com/71533935/99034669-11a6ec00-25c1-11eb-9c33-bc8be89faca5.png)
 ## ローカルでの動作方法
-https://github.com/ryotanakatsuka/ec.git
+% cd ~/ご自身のディレクトリ
+
+% git clone https://github.com/ryotanakatsuka/ec.git
+
+% cd ec
+
+% bundle install
+
+% yarn install
+
+% rails db:create
+
+% rails db:migrate
+
 
 
  users テーブル
