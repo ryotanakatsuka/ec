@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :items do
     resources :orders,only:[:new,:create]
   end
+
+  resources :news, only:[:index,:new,:create]
   
   #resources :carts, only: [:show]
 

@@ -1,0 +1,27 @@
+<div class="news-main">
+  <div class="new-form">
+  <h2>新着情報を投稿する</h2>
+    <%=form_with(model: @new,local: true) do |f|%>
+      <div class="new-input">
+        <h3>画像があればファイルを選択してください</h3>
+        <div>
+          <%=f.file_field :image,class: "new-form-img"%>
+        </div>
+        <h3>タイトルを入力してください</h3>
+        <div>
+          <%=f.text_field :title,class:"new-form-title",placeholder:"タイトル入力欄"%>
+        </div>
+        <h3>投稿したい内容を入力してください</h3>
+        <div>
+          <%=f.text_area :text,class:"new-form-text",size:"100x10",placeholder:"1000字以内で投稿してください"%>
+        </div>
+        <div class="new-form-submit">
+        <%=f.submit "投稿する"%>
+        </div>
+      </div>
+    
+    
+    <%end%>
+  </div>
+</div>
+<%=render "shared/footer"%>
