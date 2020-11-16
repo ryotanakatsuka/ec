@@ -96,7 +96,6 @@ https://ec-30432.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/71533935/99034669-11a6ec00-25c1-11eb-9c33-bc8be89faca5.png)
 ## ローカルでの動作方法
 https://github.com/ryotanakatsuka/ec.git
-git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述しましょう。この時、アプリケーション開発に使用した環境を併記することを忘れないでください（パッケージやRubyのバージョンなど）。
 
 
  users テーブル
