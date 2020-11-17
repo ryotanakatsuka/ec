@@ -11,7 +11,9 @@
   <div class="new-info">
     <h2 class="info">令和２年度 新米速報</h2>
       <ul class="messages">
-        <%%><>
+        <% @news.each do |new|%>
+        <%= new.text%>
+        <%end%>
       </ul>
   </div>
   <div class="category">
