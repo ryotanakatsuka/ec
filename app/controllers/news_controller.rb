@@ -1,7 +1,7 @@
 class NewsController < ApplicationController
   
   def index
-    @news=New.includes(:new).order("create_at DESC")
+    
   end
 
   def new
