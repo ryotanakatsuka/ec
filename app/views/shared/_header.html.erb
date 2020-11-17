@@ -9,7 +9,7 @@
       <li><%=link_to "ログアウト",destroy_user_session_path, method: :delete,class:"logout"%></li>
       <% if current_user.admin? %>
       <li><%=link_to "出品する",new_item_path,class: "exhibit"%></li>
-      <li><%=link_to "新着情報入力","#",class: "header-news"%></li>
+      <li><%=link_to "新着情報投稿",new_news_path,class: "header-news"%></li>
         <% end %>
       <%else%>
       <li><%=link_to "ログイン",new_user_session_path,class:"login"%></li>

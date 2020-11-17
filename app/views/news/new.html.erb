@@ -1,7 +1,7 @@
 <div class="news-main">
   <div class="new-form">
   <h2>新着情報を投稿する</h2>
-    <%=form_with(model: @new,local: true) do |f|%>
+    <%= form_with(model:@new,url: news_index_path,local: true)  do |f|%>
       <div class="new-input">
         <h3>画像があればファイルを選択してください</h3>
         <div>
