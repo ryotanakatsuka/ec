@@ -9,24 +9,21 @@
     </ul>
   </div>
   <div class="new-info">
-    <h2 class="info">令和２年度 新米速報</h2>
+    <h2 class="info">令和２年度 新着速報</h2>
       <ul class="messages">
-        <li class="message">
-        <div class="date">2020.10.1</div>
-        <div>新米出荷しました</div>
-        </li>
-        <li class="message">
-        <div class="date">2020.10.1</div>
-        <div>新米出荷しました</div>
-        </li>
-        <li class="message">
-        <div class="date">2020.10.1</div>
-        <div>新米出荷しました</div>
-        </li>
-        <li class="message">
-        <div class="date">2020.10.1</div>
-        <div>新米出荷しました</div>
-        </li>
+      
+       <%@news.each do |new|%>
+            <%=link_to root_path,class:"new-title" do%>
+          <li class="message">
+            <div class="date">
+              <%=I18n.l new.created_at%>
+            </div>
+            <div class="new-title">
+              <%=new.title%>
+            </div>
+          </li>
+          <%end%>
+        <%end%>
       </ul>
   </div>
   <div class="category">
@@ -65,7 +62,8 @@
     <h2 class="popularity-index">新着商品</h2>
     <ul class="item-lists">
       <% @items.each do |item|%>
-        <li class="list"><%=link_to item_path(item.id) do%>
+        <li class="list">
+        <%=link_to item_path(item.id) do%>
           
           <%=image_tag item.image,class:"item-img"%>
         

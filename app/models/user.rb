@@ -13,4 +13,5 @@ class User < ApplicationRecord
         has_one :address,dependent: :destroy
         has_many :items,dependent: :destroy
         has_many :orders,dependent: :destroy
+        has_many :news
 end
