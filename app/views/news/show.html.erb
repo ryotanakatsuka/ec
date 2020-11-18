@@ -1,0 +1,45 @@
+<div class="news-show">
+  <div class="left-contents">
+      <div class="topic-title"><h2>トピック</h2>
+        <ul >
+          <li class="colum">
+          <%= link_to("米ナビ",page_path("about"),class: "colum-link")%>
+          </li>
+          <li class="colum">
+          <%= link_to("日本のお米事情",page_path("about2"),class: "colum-link")%>
+          </li>
+          <li class="colum">
+          <%= link_to("生産者","#",class: "colum-link")%>
+          </li>
+        </ul>
+      </div>
+      <div class="category-title"><h2>商品一覧</h2>
+          <ul >
+            <li class="colum">
+            <%= link_to("白米","#",class: "colum-link")%>
+            </li>
+            <li class="colum">
+            <%= link_to("玄米","#",class: "colum-link")%>
+            </li>
+            <li class="colum">
+            <%= link_to("もち米","#",class: "colum-link")%>
+            </li>
+            <li class="colum">
+            <%= link_to("酒粕","#",class: "colum-link")%>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="news-right">
+    <h2 class="info">新着速報</h2>
+      <div class="news-right-box">
+      <%=@new.title %>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+<%=render "shared/footer"%>

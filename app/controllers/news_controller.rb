@@ -6,7 +6,6 @@ class NewsController < ApplicationController
 
   def new
     @new=New.new
-    
   end
   
   def create
@@ -17,6 +16,12 @@ class NewsController < ApplicationController
     else
       render :new
     end
+
+    def show
+      @new=New.find(params[:id])
+    end
+
+
   end
 
   private

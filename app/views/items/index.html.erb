@@ -9,11 +9,12 @@
     </ul>
   </div>
   <div class="new-info">
-    <h2 class="info">令和２年度 新着速報</h2>
+    <h2 class="info">新着速報</h2>
       <ul class="messages">
       
        <%@news.each do |new|%>
-            <%=link_to root_path,class:"new-title" do%>
+            <%=link_to news_path(new.id),class:"new-title" do%>
+            
           <li class="message">
             <div class="date">
               <%=I18n.l new.created_at%>
