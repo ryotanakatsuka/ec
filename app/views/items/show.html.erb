@@ -1,6 +1,7 @@
 
 <div class="show-edit">
   <div class="show">
+  
   <% if  user_signed_in? && current_user.admin?%>
     
   <%=link_to "編集する",edit_item_path(@item.id),class:"link-show"%>

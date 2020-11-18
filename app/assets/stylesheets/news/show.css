@@ -8,5 +8,26 @@
 .news-right{
   width: 100%;
   height: 100vh;
-  background-color: blanchedalmond;
+  }
+.news-right-box{
+  width: 60%;
+  height: auto;
+ text-align: center;
+}
+.new-info-title{
+  border-bottom: solid 3px rgb(19, 62, 105);
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+  font-size:30px;
+  }
+  .new-info-text{
+    text-align: left;
+    font-size: 20px;
+  }
+.new-img{
+  width: 40vw;
+  height: 40vh;
+}
+.new-user-name{
+  text-align: right;
 }
