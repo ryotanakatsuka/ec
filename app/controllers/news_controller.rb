@@ -21,6 +21,19 @@ class NewsController < ApplicationController
   def show
     @new=New.find(params[:id])
   end
+
+  def edit
+    @new=New.find(params[:id])
+  end
+
+  def update
+    @new=New.find(params[:id])
+    if @new.update(new_params)
+      redirect_to root_path      
+    else
+      render :edit
+    end
+  end
   
   private
 

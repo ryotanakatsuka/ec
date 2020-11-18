@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     resources :orders,only:[:new,:create]
   end
 
-  resources :news,only:[:index,:new,:show,:create]
+  resources :news
   
   #resources :carts, only: [:show]
 
