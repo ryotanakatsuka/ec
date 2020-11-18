@@ -31,9 +31,18 @@
       </div>
     </div>
     <div class="news-right">
-    <h2 class="info">新着速報</h2>
+      <h2 class="info">新着速報</h2>
       <div class="news-right-box">
-      <%=@new.title %>
+        <div class=new-info-title>
+          <%=@new.title%>
+        </div>
+        <%=image_tag @new.image,class:"new-img" %>
+        <div class="new-info-text">
+          <%=@new.text%>
+        </div>
+        <div class="new-user-name">生産者：
+          <%="#{@new.user.first_name}" + "#{@new.user.last_name}"%>
+        </div>
       </div>
     </div>
 

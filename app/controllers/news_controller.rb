@@ -16,14 +16,12 @@ class NewsController < ApplicationController
     else
       render :new
     end
-
-    def show
-      @new=New.find(params[:id])
-    end
-
-
   end
-
+  
+  def show
+    @new=New.find(params[:id])
+  end
+  
   private
 
   def new_params
