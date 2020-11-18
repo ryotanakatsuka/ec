@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, except:[:index,:show]
   def index
     @items=Item.includes(:user).order("created_at DESC")
-    @news=New.all
+    @news=New.includes(:user).order("created_at DESC")
   end
   
   def new
@@ -20,7 +20,6 @@ class ItemsController < ApplicationController
   end
   
   def show
-    
     @item=Item.find(params[:id])
   end
   
@@ -38,7 +37,6 @@ class ItemsController < ApplicationController
   end
   
   def destroy
-    #binding.pry
     @item=Item.find(params[:id])
     if @item.destroy
       redirect_to root_path
