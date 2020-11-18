@@ -52,7 +52,7 @@
         </div>
         <%=image_tag @new.image,class:"new-img" %>
         <div class="new-info-text">
-          <%=@new.text%>
+          <%=simple_format(@new.text)%>
         </div>
         <div class="new-user-name">生産者：
           <%="#{@new.user.first_name}" + "#{@new.user.last_name}"%>
