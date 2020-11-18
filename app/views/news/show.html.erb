@@ -6,7 +6,7 @@
   <%=link_to "編集する",edit_news_path(@new.id),class:"link-show"%>
   </div>
   <div class="edit">
-  <%= link_to "削除する","#",method: :delete,class:"link-edit"%>
+  <%= link_to "削除する",news_path(@new.id),method: :delete,class:"link-edit"%>
   <% else %>
   <h2>商品の詳細</h2>
   <% end %>

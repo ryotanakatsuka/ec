@@ -34,6 +34,15 @@ class NewsController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @new=New.find(params[:id])
+    if @new.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
+  end
   
   private
 
