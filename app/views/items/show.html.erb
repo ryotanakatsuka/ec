@@ -31,8 +31,10 @@
     <%# </div> %>
  </div>
 </div>
-
+<%unless current_user.admin?%>
+  
 <div class="buy">
-  <%=link_to "この商品の購入画面へ",new_item_order_path(@item.id),class:"link-buy"%>
+  <%=link_to "購入画面へ",new_item_order_path(@item.id),class:"link-buy"%>
 </div>
+<% end %>
 <%=render "shared/footer"%>
