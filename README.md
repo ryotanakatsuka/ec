@@ -9,7 +9,7 @@ https://ec-30432.herokuapp.com/
 ## テスト用アカウント
 - テスト用アカウント
 
-メールアドレス：y@gmai.com
+メールアドレス：y@gmail.com
 
 パスワード：y111111
 
