@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  root to: "items#index"
+  
   resources :line_items
   resources :carts
+  
   devise_for :users,controllers:{
     registrations: 'users/registrations'
   }
@@ -8,9 +11,9 @@ Rails.application.routes.draw do
     get 'addresses', to: 'users/registrations#new_address'
     post 'addresses', to: 'users/registrations#create_address'
   end
-  root to: "items#index"
+  
   resources :items do
-    resources :orders,only:[:new,:create]
+    resources :orders,only:[:new,:create] 
   end
 
   resources :news

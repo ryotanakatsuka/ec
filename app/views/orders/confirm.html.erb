@@ -1,0 +1,21 @@
+<h2>購入確認画面</h2>
+<div class="item-show">
+ <div class="item-box">
+    <%=image_tag @item.image,class:"item-img"%>
+    <div class="item-info">
+      <div class="item-name">【商品名】<%=@item.name%></div>
+      <div class="item-prefecture">【生産地】<%=@item.prefecture.name%>産</div>
+      <div class="item-manufacturer">【生産者】<%=@item.manufacturer%></div>
+      <div class="item-internal-capacity">【内容量】<%=@item.internal_capacity%>Kg</div>
+      <div class="item-delivery-date">【発送までの日数】<%=@item.delivery_date.name%></div>
+      <div class="item-price">【販売価格】<%=@item.price%>円(送料込み)</div>
+    </div>
+ </div>
+</div>
+<%="#{current_user.first_name}"+"#{current_user.last_name}"%>様
+<%=current_user.address.city%>
+<%= form_with(model: [@item,@order],url: item_orders_path(@item,@order),id: 'charge-form',local: true) do |f|%>
+    <div class="buy">
+      <%=f.submit "購入する",class:"buy-btn"%>
+    </div>
+<%end%>

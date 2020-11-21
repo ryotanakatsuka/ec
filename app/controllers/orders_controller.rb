@@ -3,7 +3,13 @@ class OrdersController < ApplicationController
   def new
     @item=Item.find(params[:item_id])
     @order=Order.new
+    
   end
+
+  #def confirm
+   # @order=Order.new(order_params)  
+    #@item=Item.find(params[:item_id])
+  #end
   
   def create
     @order=Order.new(order_params)
