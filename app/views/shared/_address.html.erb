@@ -8,7 +8,7 @@
     <th>郵便番号</th><td><%=current_user.address.postal_code%></td>
   </tr>
   <tr>
-    <th>都道府県</th><td><%=current_user.address.prefecture_id%></td>
+    <th>都道府県</th><td><%=current_user.address.prefecture.name%></td>
   </tr>
   <tr>
     <th>市区町村</th><td><%=current_user.address.city%></td>
