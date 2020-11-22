@@ -9,9 +9,9 @@ https://ec-30432.herokuapp.com/
 ## テスト用アカウント
 - テスト用アカウント
 
-メールアドレス：y@gmail.com
+メールアドレス：i@gmail.com
 
-パスワード：y111111
+パスワード：111111
 
 - Basic認証
 
@@ -89,25 +89,8 @@ https://ec-30432.herokuapp.com/
 ## 実装予定の機能
 - 商品のカート機能の実装
 
-- 購入確認画面の実装
-
-- 新着情報の実装
 ## データベース設計
 ![image](https://user-images.githubusercontent.com/71533935/99034669-11a6ec00-25c1-11eb-9c33-bc8be89faca5.png)
-## ローカルでの動作方法
-% cd ~/ご自身のディレクトリ
-
-% git clone https://github.com/ryotanakatsuka/ec.git
-
-% cd ec
-
-% bundle install
-
-% yarn install
-
-% rails db:create
-
-% rails db:migrate
 
 
 
