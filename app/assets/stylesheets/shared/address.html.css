@@ -1,0 +1,22 @@
+.order-address{
+  text-align: center;
+}
+.address-detail{
+  display: flex;
+  justify-content: center;
+  
+  width: 100vw;
+}
+th,td{
+  border:solid 1px black;
+  
+  height: 40px;
+}
+th{
+  width: 20vw;
+  background-color: #eee;
+}
+td{
+  width: 60vw;
+  font-size: 30px;
+}

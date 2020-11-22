@@ -1,0 +1,26 @@
+<div class="order-address">
+  <h2>ご配送先</h2>
+  <table class="address-detail">
+  <tr>
+    <th>お名前</th><td><%="#{current_user.first_name}"+"#{current_user.last_name}"%>様</td>
+  </tr>
+  <tr>
+    <th>郵便番号</th><td><%=current_user.address.postal_code%></td>
+  </tr>
+  <tr>
+    <th>都道府県</th><td><%=current_user.address.prefecture.name%></td>
+  </tr>
+  <tr>
+    <th>市区町村</th><td><%=current_user.address.city%></td>
+  </tr>
+  <tr>
+    <th>番地</th><td><%=current_user.address.addresses%></td>
+  </tr>
+  <tr>
+    <th>建物名</th><td><%=current_user.address.building%></td>
+  </tr>
+  <tr>
+    <th>電話番号</th><td><%=current_user.address.phone_number%></td>
+  </tr>
+  </table>
+</div>

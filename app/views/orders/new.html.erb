@@ -13,6 +13,9 @@
       <div class="item-order-price">【販売価格】<%=@item.price%>円(送料込み)</div>
     </div>
   </div>
+  
+ <%=render "shared/address"%>
+ 
   <%= form_with(model: [@item,@order],url: item_orders_path(@item,@order),id: 'charge-form',local: true) do |f|%>
   <div class="credit-card-form">
      <h2>クレジットカード情報を入力してください</h2>
