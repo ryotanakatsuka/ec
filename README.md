@@ -81,10 +81,9 @@ https://ec-30432.herokuapp.com/
 
 アカウント登録済みユーザーは商品をクレジットカードにおいて購入する事ができる様実装しました
 
-また購入画面ではアカウント登録しているユーザーの住所を表示するよう実装しました
 
 購入![06684f3056ffd35a499a9c3c7fe2ad24_1](https://user-images.githubusercontent.com/71533935/99179186-75b2e700-275e-11eb-931d-7e427201dfac.gif)
-![300f9611da8ab01718755ddc6f65ad9c](https://user-images.githubusercontent.com/71533935/99945815-acb97600-2db8-11eb-8eb1-27b67e2776dd.jpg)
+また購入画面ではアカウント登録しているユーザーの住所を表示するよう追加で実装しました![300f9611da8ab01718755ddc6f65ad9c](https://user-images.githubusercontent.com/71533935/99945815-acb97600-2db8-11eb-8eb1-27b67e2776dd.jpg)
 
 
 
