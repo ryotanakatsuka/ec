@@ -1,37 +1,35 @@
 <div class="about2">
-  <div class="about-left">
-    <div class="about-left-box">
+  <div class="left-contents">
       <div class="topic-title"><h2>トピック</h2>
         <ul >
           <li class="colum">
-          <%= link_to_unless_current("米ナビ",page_path("about"),class: "colum-link")%>
+          <%= link_to("米ナビ",page_path("about"),class: "colum-link")%>
           </li>
           <li class="colum">
-          <%= link_to_unless_current("日本のお米事情",page_path("about2"),class: "colum-link")%>
+          <%= link_to("日本のお米事情",page_path("about2"),class: "colum-link")%>
           </li>
           <li class="colum">
-          <%= link_to_unless_current("生産者","#",class: "colum-link")%>
+          <%= link_to("生産者","#",class: "colum-link")%>
           </li>
         </ul>
       </div>
-      <div class="category-title"><h2>商品一覧</h2>
-        <ul >
+      <div class="category-title"><h2>カテゴリー</h2>
+          <ul >
             <li class="colum">
-            <%= link_to_unless_current("白米","#",class: "colum-link")%>
+            <%= link_to "白米",topics_path,class: "colum-link"%>
             </li>
             <li class="colum">
-            <%= link_to_unless_current("玄米","#",class: "colum-link")%>
+            <%= link_to("玄米",brown_rice_topics_path,class: "colum-link")%>
             </li>
             <li class="colum">
-            <%= link_to_unless_current("もち米","#",class: "colum-link")%>
+            <%= link_to("もち米",sticky_rice_topics_path,class: "colum-link")%>
             </li>
             <li class="colum">
-            <%= link_to_unless_current("酒粕","#",class: "colum-link")%>
+            <%= link_to("酒粕",sake_lees_topics_path,class: "colum-link")%>
             </li>
-        </ul>
+          </ul>
       </div>
     </div>
-  </div>
   <div class="about-right">
     <div class="about-right-box">
       <h2 class="about-right-title">日本のお米事情</h2>
