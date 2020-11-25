@@ -17,7 +17,7 @@
     <div class="item-prefecture">生産地</div>
     <%= f.collection_select(:prefecture_id,Prefecture.all,:id, :name, {}, {class:"prefecture-select"})%>
     
-    <div class="item-condition">商品の状態</div>
+    <div class="item-condition">商品の種類</div>
     <%= f.collection_select(:condition_id,Condition.all,:id, :name, {}, {class:"condition-select"})%>
     
     <div class="item-delivery-date">配送までの日数</div>

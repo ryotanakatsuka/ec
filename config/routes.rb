@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   resources :line_items
   resources :carts
+  resources :news
+  resources :topics,only:[:index]
   
   devise_for :users,controllers:{
     registrations: 'users/registrations'
@@ -16,7 +18,6 @@ Rails.application.routes.draw do
     resources :orders,only:[:new,:create] 
   end
 
-  resources :news
   
   resources :carts, only: [:show]
 
