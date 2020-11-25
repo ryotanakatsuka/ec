@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   resources :line_items
   resources :carts
   resources :news
-  resources :topics,only:[:index]
+  resources :topics do
+    collection do
+      get "brown_rice"
+      get "sticky_rice"
+      get "sake_lees"
+    end
+  end
   
   devise_for :users,controllers:{
     registrations: 'users/registrations'
