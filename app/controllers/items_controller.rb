@@ -1,7 +1,8 @@
 class ItemsController < ApplicationController
   before_action :authenticate_user!, except:[:index,:show]
   def index
-    @items=Item.includes(:user).order("created_at DESC")
+    #@items=Item.all.page(params[:page]).per(5)
+    @items=Item.includes(:user).order("created_at DESC").page(params[:page]).per(5)
     @news=New.includes(:user).order("created_at DESC")
   end
   
