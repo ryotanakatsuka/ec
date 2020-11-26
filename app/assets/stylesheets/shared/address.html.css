@@ -15,6 +15,7 @@ th,td{
 th{
   width: 20vw;
   background-color: #eee;
+  text-align: center;
 }
 td{
   width: 60vw;

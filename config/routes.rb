@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   root to: "items#index"
-  resources :users,only:[:show]
   resources :line_items
   resources :carts
   resources :news
@@ -23,14 +22,15 @@ Rails.application.routes.draw do
   resources :items do
     resources :orders,only:[:new,:create] 
   end
-
+  
   
   resources :carts, only: [:show]
-
+  
   post '/add_item' => 'carts#add_item'
   post '/update_item' => 'carts#update_item'
   delete '/delete_item' => 'carts#delete_item'
   
-    
-
+  resources :users,only:[:show]
+  
+  
 end

@@ -1,0 +1,22 @@
+.purchase_history{
+  
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  
+}
+.item_history{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+.history-info{
+  margin: 10px;
+  text-align: left;
+}
+.rebuy{
+  margin-top: 10px;
+  text-align: center;
+  
+}
