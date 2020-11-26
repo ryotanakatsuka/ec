@@ -1,7 +1,7 @@
 <%=render "shared/second_header"%>
 <div class="main">
   <div class="question-contents">
-    <h2 class="title">毎日お米を食べよう！</h2>
+    <h2 class="title">お米を食べよう！</h2>
     <ul class="question-lists">
       <li class="left-list"><%=image_tag"question2.jpg",class:"list-pict"%></li>
       <li class="right-list"><%=image_tag"question4.jpg",class:"list-pict"%></li>
@@ -95,6 +95,7 @@
       </li>
      <%end%>
     </ul>
+    <%= paginate @items %>
    </div>
   </div>
 </div>
