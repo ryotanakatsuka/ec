@@ -14,7 +14,7 @@
       <div class="item-price">【販売価格】<%=order.item.price%>円(送料込み)</div>
       <div class="item-delivery-date">【購入日】<%=I18n.l order.created_at%></div>
       <div class="rebuy">
-        <%=link_to "もう一度購入する","#"%>
+        <%=link_to "もう一度購入する",new_item_order_path(order.item.id)%>
       </div>
     </div>
   <% end %>
