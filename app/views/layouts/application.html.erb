@@ -13,7 +13,9 @@
   </head>
 
   <body>
-  
+
+     <%= breadcrumbs separator: " &rsaquo; " %>   
+        <% breadcrumb :root %>
     <header>
       <div class="heading">
         <%=link_to"米ナビ","/",class:"heading-title"%>
@@ -22,6 +24,7 @@
         <ul class="nav-lists">
         <%if user_signed_in? %>
         <li><%=link_to "#{current_user.first_name}"+"#{current_user.last_name}"+"様",user_path(current_user.id),class:"user-name"%></li>
+
         <li><%=link_to "ログアウト",destroy_user_session_path, method: :delete,class:"logout"%></li>
           <% if current_user.admin? %>
         <li><%=link_to "出品する",new_item_path,class: "exhibit"%></li>
