@@ -27,6 +27,13 @@ crumb :topics do
   parent :root
 end
 
+crumb :items do
+  link "商品詳細",item_path
+  parent :topics
+end
+
+
+
 
 #crumb :topics do
  # link "各商品一覧(もち米)",sticky_rice_topics_path
