@@ -1,6 +1,6 @@
 <div class="show-edit">
   <div class="show">
-  
+  <% breadcrumb :news %>
   <% if  user_signed_in? && current_user.admin?%>
     
   <%=link_to "編集する",edit_news_path(@new.id),class:"link-show"%>
