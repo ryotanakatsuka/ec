@@ -6,18 +6,36 @@ crumb :users do
   link "マイページ",user_path
   parent :root
 end
+
 crumb :news do
   link "新着速報",news_path
   parent :root
 end
+
 crumb :pages do
   link "米ナビ",page_path
   parent :root
 end
+
 crumb :pages do
   link "日本のお米事情",page_path("about2")
   parent :root
 end
+
+crumb :topics do
+  link "各商品一覧",topics_path
+  parent :root
+end
+
+
+#crumb :topics do
+ # link "各商品一覧(もち米)",sticky_rice_topics_path
+  #parent :root
+#end
+#crumb :topics do
+ # link "各商品一覧(酒粕)",sake_lees_topics_path
+  #parent :root
+#end
 
 
 # crumb :projects do
