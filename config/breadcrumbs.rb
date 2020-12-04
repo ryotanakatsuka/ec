@@ -6,6 +6,11 @@ crumb :users do
   link "マイページ",user_path
   parent :root
 end
+crumb :news do
+  link "新着速報",news_path
+  parent :root
+end
+
 
 # crumb :projects do
 #   link "Projects", projects_path
