@@ -10,6 +10,14 @@ crumb :news do
   link "新着速報",news_path
   parent :root
 end
+crumb :pages do
+  link "米ナビ",page_path
+  parent :root
+end
+crumb :pages do
+  link "日本のお米事情",page_path("about2")
+  parent :root
+end
 
 
 # crumb :projects do
